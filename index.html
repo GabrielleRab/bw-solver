@@ -90,23 +90,23 @@ function testSolver()
 	var diff = parseFloat(dfield) - parseFloat(ofield);
 
 	if (diff < 0) {
-		var result = "challenging";
+		var result = "Challenging";
 	} else if (diff === 0) {
-		var result = "difficult";
+		var result = "Difficult";
 	} else if (diff >= 3) {
-		var result = "routine";
+		var result = "Routine";
 	} else if (diff === 1) {
 		if(parseFloat(dfield) < 4) {
-			var result = "routine";
+			var result = "Routine";
 		}
 		else {
-			var result = "difficult";
+			var result = "Difficult";
 		}
 	} else if (diff === 2) {
 		if(parseFloat(dfield) <= 6) {
-			var result = "routine"
+			var result = "Routine"
 		}
-		else {var result = "difficult"}
+		else {var result = "Difficult"}
 	}
 
 	document.getElementById("difficulty").innerHTML=result;
