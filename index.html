@@ -63,6 +63,7 @@ float: none;
 </head>
 
 <body>
+<form>
 <h1>Burning Wheel Test Difficulty Calculator</h1>
 <div class="formcontainer">
 <hr/>
@@ -72,10 +73,11 @@ float: none;
 <input type="text" id="dice">
 <strong>Obstacle:</strong>
 <input type="text" id="ob">
+<br>
 <strong>Difficulty:</strong>
 <label id="difficulty"></label>	
 </div>
-
+<br>
 <button onclick = "testSolver()">Solve</button>
 <button onclick="window.location.reload();">Refresh</button>
 
@@ -112,6 +114,6 @@ function testSolver()
 }
 
 </script>
-
+</form>
 </body>
 </html>
