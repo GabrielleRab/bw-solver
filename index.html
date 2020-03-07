@@ -34,6 +34,7 @@ width: 50%;
 h1 {
 text-align:center;
 font-size:22;
+font-color:#a83720;
 }
 button:hover {
 opacity: 0.8;
@@ -47,17 +48,6 @@ margin: 24px 50px 12px;
 padding: 16px 0;
 font-size:15;
 text-align:left;
-}
-span.psw {
-float: right;
-padding-top: 0;
-padding-right: 15px;
-}
-/* Change styles for span on extra small screens */
-@media screen and (max-width: 300px) {
-span.psw {
-display: block;
-float: none;
 }
 </style>
 </head>
@@ -79,7 +69,7 @@ float: none;
 </div>
 <br>
 <button onclick = "testSolver()">Solve</button>
-<button onclick="window.location.reload();">Refresh</button>
+<button onClick="history.go(0);">Refresh Page</button>
 </form>
 	
 <script language="JavaScript">
